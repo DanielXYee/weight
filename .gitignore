@@ -1,4 +1,4 @@
 node_modules/
 .idea/
-/yolomodel/
-/yolodata/
+public/yolomodel/
+public/yolodata/
