@@ -25,8 +25,39 @@ app.use('/static',express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+app.get('/videoList',function (req,res) {  //这里参数加上刚刚的解析的而且这里不是get了
+    let videos = []
+    const filePath = path.resolve(`./public/videos`)
+    try {
+        fs.readdir(filePath,(err,files)=>{
+            if (err){
+                console.log(err)
+                throw err
+            }
+
+            (function iterator(i){
+                if(i == files.length) {
+                    console.log(videos);
+                    res.send(JSON.stringify(videos));
+                    return;
+                }
+                fs.stat(path.join(filePath, files[i]), function(err, stat){
+                    if(stat.isFile()){
+                        videos.push(files[i]);
+                    }
+                    iterator(i+1);
+                });
+            })(0);
+        })
+    }
+    catch (e) {
+        console.log(e);
+    }
+})
+
 app.post('/upload',function (req,res) {  //这里参数加上刚刚的解析的而且这里不是get了
-    var dataPath = path.resolve('./public/poses/1.json')
+    var videoName = req.query.name
+    var dataPath = path.resolve(`./public/poses/${videoName}.json`)
     var result = req.body
     try {
         fs.writeFileSync(dataPath,JSON.stringify(result));
