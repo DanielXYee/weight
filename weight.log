@@ -1,0 +1,8 @@
+nohup: ignoring input
+
+> myapp@0.0.0 start /home/repo/weight-master
+> node ./bin/www
+
+nohup: ignoring input
+nohup: failed to run command 'npm': No such file or directory
+Killed
