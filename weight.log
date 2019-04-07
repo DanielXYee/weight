@@ -6,3 +6,112 @@ nohup: ignoring input
 nohup: ignoring input
 nohup: failed to run command 'npm': No such file or directory
 Killed
+nohup: ignoring input
+
+> myapp@0.0.0 start /home/repo/weight-master
+> node ./bin/www
+
+{ key:
+   '-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQDBDgZjvFVXPsUP3mwfUGABOMAm5eskyUhicYSrzfBA397geY52\ndudXiLXpWtqgxcB6l8zGj+EeIqR79vsycDjJyyBbvX0+R2R9T0SKLvFLmNW8LSbs\nHesiphLkT2BLRZEgM4mO4DZ41kyeGxx+3dWKS32M/saJqYJ29V+JYguBiwIDAQAB\nAoGBAIkmjJWIc9yShG9cpdWtRTc4+RHpX593vAvr98QSfy+nm/A/i11P5dSDFDFf\nUVjMhIzTkTAzgUvmcpJ7CURxA3XlD5it+C+4I6WR7tFaaPt//W7s1a+SFBtUpywP\nEkgDIy+0W98hPrgTt4Hh6ULHC0dASn4rw2XOdPO5GZTI5lSpAkEA3yUbwG+cCYma\nxg31KjZVFSYufKVXN7CuZBXhLRG/IeFOxIqID83gAZnJuC4ANQHXbqOf2fxluzsM\nLForn2oIHwJBAN16vibTSVSpDfQjcjOMH2DvrSC7DHac0uGMk7leNNbI+sofnlJl\np1EV7ItLafeinONRnOuvg5OEqa5fwUz4SRUCQHwRD8sAwwryfSFdJVChANFPd01K\nSKHoFC4FlDsQwOo/cSIJu/i9iKybKvLCcM8IBRW41+nFUXK2M+B9CgAKXhUCQQCd\nXidaIuqJ0wztGXp9keSB1grnpMA4TzmvtVkJbxyQOIGpuEmgNkZqYO+QEeebYtmi\n00xyUmVlHfAKzFLmw8v5AkB5BIFJ30LAn2kCiYI+FWO+wgH7SOy9N8Pxgm6ebKIB\n5INwPsWKaoZbhFO8Y/e9Qvr5Cld9LQK+Qh7C03w7LaiN\n-----END RSA PRIVATE KEY-----\n',
+  cert:
+   '-----BEGIN CERTIFICATE-----\nMIICATCCAWoCCQDTzodD14MoDzANBgkqhkiG9w0BAQsFADBFMQswCQYDVQQGEwJB\nVTETMBEGA1UECAwKU29tZS1TdGF0ZTEhMB8GA1UECgwYSW50ZXJuZXQgV2lkZ2l0\ncyBQdHkgTHRkMB4XDTE5MDMyODA0MDgyMVoXDTIwMDMyNzA0MDgyMVowRTELMAkG\nA1UEBhMCQVUxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0\nIFdpZGdpdHMgUHR5IEx0ZDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwQ4G\nY7xVVz7FD95sH1BgATjAJuXrJMlIYnGEq83wQN/e4HmOdnbnV4i16VraoMXAepfM\nxo/hHiKke/b7MnA4ycsgW719PkdkfU9Eii7xS5jVvC0m7B3rIqYS5E9gS0WRIDOJ\njuA2eNZMnhscft3Vikt9jP7GiamCdvVfiWILgYsCAwEAATANBgkqhkiG9w0BAQsF\nAAOBgQCPIPx+fFZbIHiU/ik0ihlk/jHDJgnTuHlfuG7clZiXL4MzXFAWO4I+1jk4\nd+lM/UISbSchOfQqVYHxh1wF+8uvQaDJywUXQtjz/HO0VKyA+866YKduNoxSh0RM\n5TSJkrt8rdRC/047kG2sh713BMdDfceAQnqlIG2Pav95pSbxqg==\n-----END CERTIFICATE-----\n' }
+{ Agent: [Function: Agent],
+  globalAgent:
+   Agent {
+     _events: [Object: null prototype] { free: [Function] },
+     _eventsCount: 1,
+     _maxListeners: undefined,
+     defaultPort: 443,
+     protocol: 'https:',
+     options: { path: null },
+     requests: {},
+     sockets: {},
+     freeSockets: {},
+     keepAliveMsecs: 1000,
+     keepAlive: false,
+     maxSockets: Infinity,
+     maxFreeSockets: 256,
+     maxCachedSessions: 100,
+     _sessionCache: { map: {}, list: [] } },
+  Server: [Function: Server],
+  createServer: [Function: createServer],
+  get: [Function: get],
+  request: [Function: request] }
+use https
+[0mGET /static/ifitnet_tiny/model.json [32m200 [0m9.052 ms - 419175[0m
+[0mGET /static/ifitnet_tiny/group1-shard2of2 [32m200 [0m0.905 ms - 2525824[0m
+[0mGET /static/ifitnet_tiny/group1-shard1of2 [32m200 [0m1.278 ms - 4194304[0m
+[ 'dancecrop.mp4',
+  'fuwochengcrop.mp4',
+  'jianshencrop.mp4',
+  'shenduncrop.mp4' ]
+[0mGET /videoList [32m200 [0m3.441 ms - 74[0m
+[0mGET /static/poses/jianshencrop.json [32m200 [0m0.522 ms - 195560[0m
+[0mGET /static/videos/jianshencrop.mp4 [32m206 [0m1.112 ms - 161001[0m
+[0mGET /static/ifitnet_tiny/model.json [32m200 [0m0.639 ms - 419175[0m
+[0mGET /static/ifitnet_tiny/group1-shard2of2 [32m200 [0m0.504 ms - 2525824[0m
+[0mGET /static/ifitnet_tiny/group1-shard1of2 [32m200 [0m0.507 ms - 4194304[0m
+[0mGET /static/ifitnet_tiny/model.json [32m200 [0m0.544 ms - 419175[0m
+[0mGET /static/ifitnet_tiny/model.json [32m200 [0m0.554 ms - 419175[0m
+[0mGET /static/ifitnet_tiny/group1-shard2of2 [32m200 [0m0.525 ms - 2525824[0m
+[0mGET /static/ifitnet_tiny/group1-shard1of2 [32m200 [0m0.544 ms - 4194304[0m
+[ 'dancecrop.mp4',
+  'fuwochengcrop.mp4',
+  'jianshencrop.mp4',
+  'shenduncrop.mp4' ]
+[0mGET /videoList [32m200 [0m0.885 ms - 74[0m
+[0mGET /static/poses/jianshencrop.json [32m200 [0m1.044 ms - 195560[0m
+[0mGET /static/videos/jianshencrop.mp4 [32m206 [0m0.652 ms - 161001[0m
+[0mGET /static/ifitnet_tiny/model.json [32m200 [0m0.550 ms - 419175[0m
+[0mGET /static/ifitnet_tiny/group1-shard2of2 [32m200 [0m0.481 ms - 2525824[0m
+[0mGET /static/ifitnet_tiny/group1-shard1of2 [32m200 [0m0.451 ms - 4194304[0m
+[ 'dancecrop.mp4',
+  'fuwochengcrop.mp4',
+  'jianshencrop.mp4',
+  'shenduncrop.mp4' ]
+[0mGET /videoList [32m200 [0m0.630 ms - 74[0m
+[0mGET /static/poses/jianshencrop.json [32m200 [0m0.583 ms - 195560[0m
+[0mGET /static/videos/jianshencrop.mp4 [32m206 [0m0.507 ms - 161001[0m
+[0mGET /static/ifitnet_tiny/model.json [32m200 [0m0.425 ms - 419175[0m
+[0mGET /static/ifitnet_tiny/group1-shard2of2 [32m200 [0m0.486 ms - 2525824[0m
+[0mGET /static/ifitnet_tiny/group1-shard1of2 [32m200 [0m0.482 ms - 4194304[0m
+[ 'dancecrop.mp4',
+  'fuwochengcrop.mp4',
+  'jianshencrop.mp4',
+  'shenduncrop.mp4' ]
+[0mGET /videoList [32m200 [0m0.618 ms - 74[0m
+[0mGET /static/videos/jianshencrop.mp4 [32m206 [0m0.503 ms - 161001[0m
+[0mGET /static/poses/jianshencrop.json [32m200 [0m0.802 ms - 195560[0m
+[0mGET /static/ifitnet_tiny/model.json [32m200 [0m0.784 ms - 419175[0m
+[0mGET /static/ifitnet_tiny/group1-shard2of2 [32m200 [0m0.705 ms - 2525824[0m
+[0mGET /static/ifitnet_tiny/group1-shard1of2 [32m200 [0m0.555 ms - 4194304[0m
+[ 'dancecrop.mp4',
+  'fuwochengcrop.mp4',
+  'jianshencrop.mp4',
+  'shenduncrop.mp4' ]
+[0mGET /videoList [32m200 [0m0.671 ms - 74[0m
+[0mGET /static/poses/jianshencrop.json [32m200 [0m0.507 ms - 195560[0m
+[0mGET /static/ifitnet_tiny/model.json [32m200 [0m0.455 ms - 419175[0m
+[0mGET /static/ifitnet_tiny/group1-shard2of2 [32m200 [0m0.538 ms - 2525824[0m
+[0mGET /static/ifitnet_tiny/group1-shard1of2 [32m200 [0m0.506 ms - 4194304[0m
+[ 'dancecrop.mp4',
+  'fuwochengcrop.mp4',
+  'jianshencrop.mp4',
+  'shenduncrop.mp4' ]
+[0mGET /videoList [32m200 [0m0.671 ms - 74[0m
+[0mGET /static/poses/jianshencrop.json [32m200 [0m0.470 ms - 195560[0m
+[0mGET /static/videos/jianshencrop.mp4 [32m206 [0m0.482 ms - 161001[0m
+[0mGET /static/videos/shenduncrop.mp4 [32m206 [0m0.651 ms - 1573708[0m
+[0mGET /static/videos/shenduncrop.mp4 [32m206 [0m0.641 ms - 33612[0m
+[0mGET /static/videos/shenduncrop.mp4 [32m206 [0m0.667 ms - 1540940[0m
+[0mGET /static/poses/shenduncrop.json [32m200 [0m0.788 ms - 861951[0m
+[0mGET /static/ifitnet_tiny/model.json [32m200 [0m0.477 ms - 419175[0m
+[0mGET /static/ifitnet_tiny/group1-shard2of2 [32m200 [0m0.507 ms - 2525824[0m
+[0mGET /static/ifitnet_tiny/group1-shard1of2 [32m200 [0m0.563 ms - 4194304[0m
+[ 'dancecrop.mp4',
+  'fuwochengcrop.mp4',
+  'jianshencrop.mp4',
+  'shenduncrop.mp4' ]
+[0mGET /videoList [32m200 [0m0.952 ms - 74[0m
+[0mGET /static/videos/jianshencrop.mp4 [32m206 [0m0.443 ms - 161001[0m
+[0mGET / [32m200 [0m286.447 ms - 170[0m

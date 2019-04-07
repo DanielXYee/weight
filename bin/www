@@ -10,7 +10,7 @@ var http = require('http');
 var https = require('https');
 var fs = require('fs')
 
-const IN_SERVER = 0
+const IN_SERVER = 1
 
 /**
  * Get port from environment and store in Express.
@@ -19,6 +19,15 @@ const IN_SERVER = 0
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
+app.get('/', function(req, res) {
+    if(req.protocol === 'https') {
+        res.status(200).send('Welcome to Safety Land!');
+    }
+    else {
+        res.status(200).send('Welcome!');
+    }
+});
+
 /**
  * Create HTTP server.
  */
@@ -26,22 +35,34 @@ app.set('port', port);
 var server = null
 
 if (IN_SERVER){
-    var privateKey  = fs.readFileSync('/path/to/private.pem', 'utf8');
-    var certificate = fs.readFileSync('/path/to/file.crt', 'utf8');
-    var credentials = {key: privateKey, cert: certificate};
-    server = http.createServer(app);
+	try{
+		var privateKey  = fs.readFileSync('/home/public/weight/private.pem', 'utf8');
+		var certificate = fs.readFileSync('/home/public/weight/file.crt', 'utf8');
+		var credentials = {key: privateKey, cert: certificate};
+		console.log(credentials);
+		server = https.createServer(credentials,app);
+		console.log(https);
+		console.log('use https');
+		server.listen(port);
+		server.on('error', onError);
+		server.on('listening', onListening);
+	}catch(e){
+		console.log(e)
+	}
 }
 else {
     server = http.createServer(app);
+	console.log('use http')
+	server.listen(port);
+	server.on('error', onError);
+	server.on('listening', onListening);
 }
 
 /**
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
+
 
 /**
  * Normalize a port into a number, string, or false.
