@@ -10,7 +10,7 @@ var http = require('http');
 var https = require('https');
 var fs = require('fs')
 
-const IN_SERVER = 1
+const IN_SERVER = 0
 
 /**
  * Get port from environment and store in Express.
